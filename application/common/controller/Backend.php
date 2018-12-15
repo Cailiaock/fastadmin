@@ -298,7 +298,7 @@ class Backend extends Controller
                 case '>=':
                 case '<':
                 case '<=':
-                    $where[] = [$k, $sym, intval($v)];
+                    $where[] = [$k, $sym, (string)$v];
                     break;
                 case 'FINDIN':
                 case 'FINDINSET':
